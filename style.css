@@ -1,0 +1,176 @@
+/*formatação da minha pagina*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #030303;
+    color: #40688e;}
+
+/**/
+
+.cabecalho {
+    background-color: #2b2b2b;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #40688e;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu a{
+    color: #40688e;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.6s ease;
+    
+}
+
+.titulo-secao {
+    text-align: center;
+    color: #40688e;
+    border-color: black;
+    font-size: 32;
+    margin-bottom: 5px;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+}
+
+.subtitulo{
+    color: #40688e;
+    text-align: center;
+}
+
+.nome-filme{
+    color: #40688e;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.grade-filmes{
+    display: grid;
+    /* vai organizar todos os elementos (filhos) em linhas e colunas  */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* pra deixar tudo na horizontal */
+    gap: 25px;
+}
+
+.poster{
+    width: 275px;
+    height: 390px;
+    object-fit: cover;
+}
+
+.card-filme{
+    background-color: #1c2b38;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #454545;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-filme{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-filme:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #40688e;
+}
+
+.genero{
+    font-size: 12px;
+    color: #40688e;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.sinopse{
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.genero{
+    margin: 10px;
+    font-size: 13px;
+    color: #40688e;
+    text-decoration: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sessoes{
+    margin: 10px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.botao-comprar{
+    margin: 10px;
+    display: block;
+    text-align: center;
+    background-color: #0088ff;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #104a81;
+
+}
+
+.horario{
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+.botao-comprar:hover{
+    background-color: #2b2b2b;
+}
+
+
+
+                                                        /*comentarios gerais*/                                                           
+/*
+---------------------------------------------------------------cores-------------------------------------------------------------------
+
+cor vinho - #7f1734 
+cor legal - #fdfce5
+azul irado - #1c2b38
+azul escuro irado - #1e3347
+---------------------------------------------------------------c-------------------------------------------------------------------
+
+display: flex; ........................ eles passam a ficar na mesma fila
+justify-content: space-between; ....... coloca cada filho separado
+max-width ............................. largura maxima da tela
+margin ................................ margem
+grid .................................. organizar todos os elementos (filhos) em linhas e colunas
+border-radius.......................... arredonda as bordas
+overflow............................... corta e esconde qqr conteúdo que ultrapasse os limites
+padding ............................... é uma "margem interna", garante que independente do tamanho da tela, tenha uma distancia minima da margem da tela
+    no padding, o primeir vai sempre ser o "y", por exemplo, ali está 0 20px, o 0 é de "cima", o 20 é de lado
+*/
