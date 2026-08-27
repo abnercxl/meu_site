@@ -34,7 +34,7 @@ body{
     
 }
 
-.titulo-secao {
+.titulo-secao{
     text-align: center;
     color: #40688e;
     border-color: black;
@@ -44,7 +44,7 @@ body{
 
 
 .container{
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 40px auto;
     padding: 0 20px;
 
@@ -146,15 +146,143 @@ body{
     padding: 4px 8px;
     border-radius: 4px;
     margin-left: 4px;
+    background-color: #030303;
 }
 
 .botao-comprar:hover{
     background-color: #2b2b2b;
 }
 
+.area-inscricao{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
 
+.coluna-form{
+    flex: 1;
+    min-width: 320px;
+    background-color: #1e3347;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0088ff;
+}
 
-                                                        /*comentarios gerais*/                                                           
+.coluna-midia{
+    flex: 1;
+    min-height: 320px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.coluna-form label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #4080bd;
+}
+
+.coluna-form input[type="text"],
+.coluna-form input[type="password"],
+.coluna-form input[type="email"],
+.coluna-form input[type="date"],
+.coluna-form input select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #174875;
+    border-radius: 5px;
+    color: #fffbed;
+    font-size: 14px;
+}
+
+.btn-enviar{
+    background-color: #174875;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fffbed;
+    box-shadow: 0 4px 12px #1c2b38;
+}
+
+.btn-limpar{
+    background-color: #174875;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fffbed;
+    box-shadow: 0 4px 12px #1c2b38;
+}
+
+.btn-enviar:hover{
+    background-color: #40688e;
+}
+
+.btn-limpar:hover{
+    background-color: #40688e;
+}
+
+.tabela{
+    max-width: 2500px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #fffbed;
+
+}
+
+.dia{
+    flex: 1;
+    min-width: 320px;
+    background-color: #1e3347;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0088ff;
+}
+
+.seg{
+    flex: 1;
+    min-width: 320px;
+    background-color: #1e3347;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0088ff;
+    width: 40px;
+    height: 40px;
+}
+
+.qua{
+    flex: 1;
+    min-width: 320px;
+    background-color: #1e3347;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0088ff;
+    width: 30px;
+    height: 40px;
+}
+
+.sex{
+    flex: 1;
+    min-width: 320px;
+    background-color: #1e3347;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0088ff;
+    width: 30px;
+    height: 40px;
+}
+
+.titulo-tabela{
+    font-size: 25px;
+
+}
+
+                                                        /*comentarios gerais*/                                          
 /*
 ---------------------------------------------------------------cores-------------------------------------------------------------------
 
@@ -162,6 +290,10 @@ cor vinho - #7f1734
 cor legal - #fdfce5
 azul irado - #1c2b38
 azul escuro irado - #1e3347
+azul iraco claro - #0088ff
+azul iradamente irado - #40688e
+azul iradamente irado mais claro - #4080bd
+azul massa - #174875
 ---------------------------------------------------------------c-------------------------------------------------------------------
 
 display: flex; ........................ eles passam a ficar na mesma fila
@@ -171,6 +303,11 @@ margin ................................ margem
 grid .................................. organizar todos os elementos (filhos) em linhas e colunas
 border-radius.......................... arredonda as bordas
 overflow............................... corta e esconde qqr conteúdo que ultrapasse os limites
+gap.................................... espaçamento
+align-items: flex-start;............... alinha o topo de todas as colunas
+flex................................... faz o formulario crescer proporcionalmente
+font-weight: bold;..................... deixa a fonte em negrito
+cursor: pointer........................ a seta se transforma em mão
 padding ............................... é uma "margem interna", garante que independente do tamanho da tela, tenha uma distancia minima da margem da tela
     no padding, o primeir vai sempre ser o "y", por exemplo, ali está 0 20px, o 0 é de "cima", o 20 é de lado
 */

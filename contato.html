@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">🎥cineSENAI</div>
+
+        <nav class="menu">
+            <a href="index.html">Em cartaz</a>
+            <a href="em_breve.html">Em breve</a>
+            <a href="precos.html">Preços</a>
+            <a href="contato.html">Contato</a>
+         </nav>
+
+    </header>
+
+    <main class="container">
+        <main class="container"><!--conteúdo principal do site-->
+        <h1 class="titulo-secao">Cadastro Para Dicas de Filmes</h1>
+        <p class="subtitulo">Preencha seus dados para realizar a inscrição no CineSENAI</p>
+
+        <div class="area-inscricao">
+
+<!--
+ ================================================================formulario===========================================================
+-->
+            <form action="/processar-cadastro" method="post" class="coluna-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required minlength="3" maxlength="50"><br>
+<!--
+ ----------------------------------------------------------------senha------------------------------------------------------------------
+-->
+                <label for="senha">senha de acesso</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="8" maxlength="15"><br>
+<!--
+ ----------------------------------------------------------------email------------------------------------------------------------------
+-->
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required minlength><br>
+<!--
+ ----------------------------------------------------------------data nascimento------------------------------------------------------
+-->
+                <label for="data_nasc">Data de Nascimento</label>
+                <input type="date" id="data_nasc" name="data_nascimento" min="1900-01-01" max="2026-12-31" required><br><br>
+
+
+<!--
+ =================================================================TURNOS (radio) ========================================================
+-->
+                <label class="periodo-filmes">Período dos Filmes</label><br><br>
+<!--
+ ----------------------------------------------------------------manhã------------------------------------------------------------------
+-->
+                <input type="radio" id="turno" name="turno" value="manha" required>
+                <label for="turno_manhã">Manhã</label><br>  
+<!--
+ ----------------------------------------------------------------tarde------------------------------------------------------------------
+-->
+                <input type="radio" id="turno_tarde" name="turno" value="tarde">
+                <label for="turno_tarde">Tarde</label><br>
+<!--
+ ----------------------------------------------------------------noite------------------------------------------------------------------
+-->
+                <input type="radio" id="turno_noite" name="turno" value="noite">
+                <label for="turno_noite">noite</label><br><br>
+
+
+<!--
+ ----------------------------------------------------------------noite------------------------------------------------------------------
+-->
+
+<!--
+ ============================================================TURNOS (checkbox)========================================================
+-->
+                <input type="checkbox" id="acao" name="interesse" value="acao">
+                <label for="acao">filmes de ação</label><br>
+
+                <input type="checkbox" id="comedia" name="interesse" value="comedia">
+                <label for="comedia">Filmes de comédia</label><br>
+
+                <input type="checkbox" id="terror" name="interesse" value="terror">
+                <label for="terror">Filmes de terror</label><br><br>
+
+                <label for="unidade">Selecione o Cinema</label>
+                <select name="unidade" id="unidade" required>
+                    <option value="" disa selected>Selecione um cinema</option>
+                    <option value="sp">São Paulo - capital</option>
+                    <option value="Sebastianopolis">Sebastianopolis do sul</option>
+                    <option value="Votuporanga">Votuporanga</option>
+                    <option value="Valentim">Valentim Gentil</option>
+                    
+                </select>
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Li e Aceito os Termos de Uso</label><br><br>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <button type="reset" class="btn-limpar">Limpar tudo</button><br>
+            </form>
+<!--
+ ----------------------------------------------------------------mapa------------------------------------------------------------------
+-->
+            <div class="coluna-midia">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.3179718956085!2d-49.98999572605459!3d-20.410992153464058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd594559a0a0cd%3A0x543c5b6add443949!2zSkogR8OhcyDDgWd1YSBlIFJhw6fDtWVz!5e0!3m2!1spt-BR!2sbr!4v1787665890067!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<!--
+ ----------------------------------------------------------------video------------------------------------------------------------------
+-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F6x364LeyPE?si=m7n6O8j0XQQFXLgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
+
+<!--
+ ---------------------------------------------------------comentarios gerais-------------------------------------------------------------
+
+ <form>.......... é usada para criar um formulario (exemplo, coloque o nome, email, etc)
+ <input>......... é usado para uma "resposta" (no form "coloque seu nome", você digita seu nome)
+
+ checkbox........ é a caixa para marcar (o quadrado para dar o check)
+ radio........... é a bolinha pra preencher
+ required........ torna um campo obrigatório
+ button.......... é literal só um botão
+ submit.......... enviar as respostas
+ reset........... limpar as respostas
+ unidade......... selecionar algum "campo"
+
+ -->
