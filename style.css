@@ -279,9 +279,52 @@ body{
 
 .titulo-tabela{
     font-size: 25px;
-
 }
 
+.tabela-cardapio{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.travis{
+    width: 100%;
+    background-color: #1c2b38;
+    text-align: left;
+    font-size: 15px;
+    box-shadow: 0 4px 12px #297dc7;
+}
+
+.travis th{
+    background-color: #104a81;
+    color: #fffbed;
+    padding: 16px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #40688e;
+}
+
+.travis2{
+    background-color: #0b3358;
+    color: #f4efdb;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fcfcfd;
+}
+
+.h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.p{
+    text-align: center;
+}
+
+.travis td{
+    padding: 16px;
+    border-bottom: 1px solid #006cd1;
+    color: #fffbed;
+}
                                                         /*comentarios gerais*/                                          
 /*
 ---------------------------------------------------------------cores-------------------------------------------------------------------
@@ -294,7 +337,7 @@ azul iraco claro - #0088ff
 azul iradamente irado - #40688e
 azul iradamente irado mais claro - #4080bd
 azul massa - #174875
----------------------------------------------------------------c-------------------------------------------------------------------
+---------------------------------------------------------------códigos------------------------------------------------------------
 
 display: flex; ........................ eles passam a ficar na mesma fila
 justify-content: space-between; ....... coloca cada filho separado
@@ -308,6 +351,8 @@ align-items: flex-start;............... alinha o topo de todas as colunas
 flex................................... faz o formulario crescer proporcionalmente
 font-weight: bold;..................... deixa a fonte em negrito
 cursor: pointer........................ a seta se transforma em mão
+text-transform: uppercase;............. deixa tudo em maiusculo
+text-transform: downcase;.............. deixa tudo em minusculo
 padding ............................... é uma "margem interna", garante que independente do tamanho da tela, tenha uma distancia minima da margem da tela
     no padding, o primeir vai sempre ser o "y", por exemplo, ali está 0 20px, o 0 é de "cima", o 20 é de lado
 */
